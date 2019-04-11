@@ -23,4 +23,9 @@ def move(board, index, player = "X")
   board[index] = player
   #play(board)
   return board
+  user_input.to_i - 1
+  user_input = gets.strip
+  index = input_to_index(user_input)
+  token = current_player(board)
+
 end
